@@ -113,7 +113,7 @@
         </table>
         
         <!-- Back to Previous Page Button -->
-        <a href="admin.html">
+        <a href="admin.php">
             <button class="button">Back to Previous Page</button>
         </a>
     </div>

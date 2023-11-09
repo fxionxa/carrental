@@ -73,7 +73,7 @@
 
             <input type="submit" value="Login">
 
-            <p class="register-link">Do you have an account? <a href="register.html">Register</a></p>
+            <p class="register-link">Do you have an account? <a href="register.php">Register</a></p>
         </form>
     </div>
 
@@ -85,11 +85,11 @@
             // You should implement logic to verify the credentials
             // Here, we assume "admin" is an admin account, and others are user accounts
             if (username === "admin" && password === "adminpassword") {
-                window.location.href = 'admin.html'; // Redirect to the admin page
+                window.location.href = 'admin.php'; // Redirect to the admin page
             } else if (username === "renter" && password === "renterpassword") {
-                window.location.href = 'renter.html'; // Redirect to the renter page
+                window.location.href = 'renter.php'; // Redirect to the renter page
             } else if (username === "carowner" && password === "carownerpassword") {
-                window.location.href = 'carowner.html'; // Redirect to the car owner page
+                window.location.href = 'carowner.php'; // Redirect to the car owner page
             } else {
                 // Handle invalid credentials or other cases
                 alert("Invalid login credentials. Please try again.");

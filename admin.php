@@ -79,15 +79,15 @@
     <div class="container">
         <h2>Manage Users</h2>
         <p>View and manage user accounts, including password resets and refunds.</p>
-        <a href="manageUsers.html"><button class="button">Manage Users</button></a>
+        <a href="manageUsers.php"><button class="button">Manage Users</button></a>
 
         <h2>View Reports</h2>
         <p>Access and review incident reports and user feedback.</p>
-        <a href="viewReports.html"><button class="button">View Reports</button></a>
+        <a href="viewReports.php"><button class="button">View Reports</button></a>
 
         <h2>Logout</h2>
         <p>Click the button below to logout.</p>
-        <a href="login.html"><button class="button logout-button">Logout</button></a>
+        <a href="login.php"><button class="button logout-button">Logout</button></a>
     </div>
 </body>
 </html>

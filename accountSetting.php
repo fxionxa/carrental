@@ -117,7 +117,7 @@
 
         <!-- Add more preferences fields here -->
 
-        <a href="renter.html"><button class="back-button">Back to Previous Page</button></a>
+        <a href="renter.php"><button class="back-button">Back to Previous Page</button></a>
     </div>
 </body>
 </html>

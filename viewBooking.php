@@ -90,7 +90,7 @@
         
         
         <!-- Add a "Back to Previous Page" link -->
-        <a href="renter.html"><button class="back-button">Back to Previous Page</button></a>
+        <a href="renter.php"><button class="back-button">Back to Previous Page</button></a>
     </div>
 </body>
 </html>

@@ -118,7 +118,7 @@
             <input type="submit" value="Register">
         </form>
 
-        <p class="go-back-link"><a href="login.html">Go Back to Login Page</a></p>
+        <p class="go-back-link"><a href="login.php">Go Back to Login Page</a></p>
     </div>
 </body>
 </html>

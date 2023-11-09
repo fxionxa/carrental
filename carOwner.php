@@ -78,16 +78,16 @@
     <div class="container">
         <h2>Your Car Listings</h2>
         <p>Manage your car listings and rental information.</p>
-        <a href="carListing.html"><button class="button">Manage Listings</button></a>
+        <a href="carListing.php"><button class="button">Manage Listings</button></a>
 
         <h2>Account Settings</h2>
         <p>Update your profile information and preferences.</p>
-        <a href="carOwnerACSetting.html"><button class="button">Account Settings</button></a>
+        <a href="carOwnerACSetting.php"><button class="button">Account Settings</button></a>
 
 
         <h2>Logout</h2>
         <p>Click the button below to logout.</p>
-        <a href="login.html"><button class="button logout-button">Logout</button></a>
+        <a href="login.php"><button class="button logout-button">Logout</button></a>
     </div>
 </body>
 </html>

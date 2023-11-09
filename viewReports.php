@@ -129,7 +129,7 @@
         
         <!-- Add more user feedback as needed -->
         
-        <a href="admin.html"><button class="back-button">Back to Previous Page</button></a>
+        <a href="admin.php"><button class="back-button">Back to Previous Page</button></a>
     </div>
 
 

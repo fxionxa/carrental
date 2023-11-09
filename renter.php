@@ -77,11 +77,11 @@
     <div class="container">
         <h2>Find a Car to Rent</h2>
         <p>Search for available cars in your area and book them for your trips.</p>
-        <a href="findCar.html"><button class="button">Search for Cars</button></a>
+        <a href="findCar.php"><button class="button">Search for Cars</button></a>
 
         <h2>Your Bookings</h2>
         <p>View and manage your upcoming and past bookings.</p>
-        <a href="viewBooking.html"><button class="button">View Bookings</button></a>
+        <a href="viewBooking.php"><button class="button">View Bookings</button></a>
 
         <h2>Account Settings</h2>
         <p>Update your profile information and preferences.</p>
@@ -89,7 +89,7 @@
 
         <h2>Logout</h2>
         <p>Click the button below to logout.</p>
-        <a href="login.html"><button class="button logout-button">Logout</button></a>
+        <a href="login.php"><button class="button logout-button">Logout</button></a>
     </div>
 </body>
 </html>
