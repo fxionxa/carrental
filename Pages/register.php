@@ -1,5 +1,7 @@
 <!-- SJSU CMPE 138 FALL 2023 TEAM9-->
-
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,7 +101,7 @@
 <body>
     <div class="container">
         <h2>Registration</h2>
-        <form onsubmit="hashPasswordAndSubmit(event);">
+        <form method= "post" action="../routes/process_register.php" onsubmit="hashPasswordAndSubmit(event);">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required><br>
 
@@ -109,11 +111,13 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required><br>
 
-            <label>Are you a Renter or Car Owner?</label><br>
+            <label>Renter/Car Owner?</label><br>
             <input type="radio" id="renter" name="user_type" value="renter" required>
             <label for="renter">Renter</label>
             <input type="radio" id="car_owner" name="user_type" value="car_owner" required>
-            <label for="car_owner">Car Owner</label><br>
+            <label for="car_owner">Car Owner</label>
+            <input type="radio" id="both" name="user_type" value="both" required>
+            <label for="both">Both</label><br>
 
             <input type="submit" value="Register">
         </form>
