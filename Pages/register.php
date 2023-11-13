@@ -2,6 +2,7 @@
 <?php
     session_start();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +27,10 @@
             const username = document.getElementById("username").value;
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
+            const firstName = document.getElementById("first_name").value;
+            const lastName = document.getElementById("last_name").value;
+            const phoneNumber = document.getElementById("phone_number").value;
+            const address = document.getElementById("address").value;
             const userType = document.querySelector('input[name="user_type"]:checked').value;
 
             // Hash the password using SHA-256
@@ -64,9 +69,16 @@
             color: #333;
         }
 
+        label {
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+
         input[type="text"],
         input[type="password"],
-        input[type="email"] {
+        input[type="email"],
+        input[type="tel"] {
             width: 100%;
             padding: 10px;
             margin: 8px 0;
@@ -89,35 +101,57 @@
         }
         
         input[type="submit"]:hover {
-            background-color: #0056b3; /* Change background color on hover */
-            transform: scale(1.05); /* Scale the button on hover */
+            background-color: #0056b3;
+            transform: scale(1.05);
         }
         
         .go-back-link {
             margin-top: 10px;
+        }
+
+        /* Arrange radio buttons in one row */
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h2>Registration</h2>
-        <form method= "post" action="../routes/process_register.php" onsubmit="hashPasswordAndSubmit(event);">
+        <form method="post" action="../routes/process_register.php" onsubmit="hashPasswordAndSubmit(event);">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="phone_number" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br>
+            <input type="text" id="username" name="username" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" required>
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br>
+            <input type="password" id="password" name="password" required>
 
-            <label>Renter/Car Owner?</label><br>
-            <input type="radio" id="renter" name="user_type" value="renter" required>
-            <label for="renter">Renter</label>
-            <input type="radio" id="car_owner" name="user_type" value="car_owner" required>
-            <label for="car_owner">Car Owner</label>
-            <input type="radio" id="both" name="user_type" value="both" required>
-            <label for="both">Both</label><br>
+            <label>Renter/Car Owner?</label>
+            <div class="radio-group">
+                <input type="radio" id="renter" name="user_type" value="renter" required>
+                <label for="renter">Renter</label>
+
+                <input type="radio" id="car_owner" name="user_type" value="car_owner" required>
+                <label for="car_owner">Car Owner</label>
+
+                <input type="radio" id="both" name="user_type" value="both" required>
+                <label for="both">Both</label>
+            </div>
 
             <input type="submit" value="Register">
         </form>
