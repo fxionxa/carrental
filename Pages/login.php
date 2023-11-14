@@ -6,61 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 300px;
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-            width: calc(100% - 22px); /* Adjusting width to account for border and padding */
-            padding: 10px;
-            margin: 8px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box; /* Consider border and padding in width */
-        }
-
-        input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s; /* Add a transition for background color */
-        }
-
-        input[type="submit"]:hover {
-            background-color: #0056b3; /* Change background color on hover */
-        }
-
-        .register-link {
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="login.css">
+    
 </head>
 <body>
     <div class="container">
@@ -79,6 +26,19 @@
     </div>
 
     <script>
+        
+        // SHA-256 hashing function
+        function sha256(plain) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(plain);
+            return window.crypto.subtle.digest('SHA-256', data).then(buffer => {
+                let hashArray = Array.from(new Uint8Array(buffer));
+                let hashHex = hashArray.map(byte => byte.toString(16).padStart(2, '0')).join('');
+                return hashHex;
+            });
+        }
+
+        
         function redirectAfterLogin() {
             const username = document.getElementById("username").value; // Get the entered username
             const password = document.getElementById("password").value; // Get the entered password
