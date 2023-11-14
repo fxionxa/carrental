@@ -24,7 +24,7 @@
 
         <h2>Account Settings</h2>
         <p>Update your profile information and preferences.</p>
-        <button class="button">Account Settings</button>
+        <a href="accountSetting.php"><button class="button">Account Settings</button>
 
         <h2>Logout</h2>
         <p>Click the button below to logout.</p>
