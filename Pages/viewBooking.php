@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Bookings</title>
-<link rel="stylesheet" href="viewBooking.css">
+<link rel="stylesheet" href="Style/viewBooking.css">
 </head>
 <body>
     <header>
