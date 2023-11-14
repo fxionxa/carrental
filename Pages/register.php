@@ -151,10 +151,7 @@
                 <label for="renter">Renter</label>
 
                 <input type="radio" id="car_owner" name="user_type" value="car_owner" required>
-                <label for="car_owner">Car Owner</label>
-
-                <input type="radio" id="both" name="user_type" value="both" required>
-                <label for="both">Both</label>
+                <label for="car_owner">Car Owner</label><br>
             </div>
 
             <input type="submit" value="Register">

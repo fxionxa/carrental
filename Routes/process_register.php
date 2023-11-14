@@ -19,25 +19,23 @@
             die("Connection failed: " . mysqli_connect_error());
         }
 
+        $fname = test_input($_POST["first_name"]);
+        $lname = test_input($_POST["last_name"]);
+        $pnumber = test_input($_POST["phone_number"]);
+        $address = test_input($_POST["address"]);
         $username = test_input($_POST["username"]);
         $email = test_input($_POST["email"]);
         $password = test_input($_POST["password"]);
         if($_POST["user_type"] == "renter"){
-            $renter = 1;
-            $carOwner = 0;
+            $uType = 'renter';
         }
         elseif($_POST["user_type"] == "car_owner"){
-            $renter = 0;
-            $carOwner = 1;
-        }
-        else {
-            $renter = 1;
-            $carOwner = 1;
+            $uType = 'owner';
         }
         
 
         try {
-            $sql = "INSERT INTO users VALUES (NULL, '$username', '$email', '$password', DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, '$renter', '$carOwner')";
+            $sql = "INSERT INTO users VALUES (NULL, '$username', '$email', '$password', '$fname', '$lname', '$pnumber', '$address', '$uType')";
             $results = mysqli_query($conn, $sql);
 
             if($results){
