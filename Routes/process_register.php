@@ -1,7 +1,6 @@
 <?php
     session_start();
     unset($_SESSION["signup_error"]);
-    unset($_SESSION["login_error"]);
 
     function test_input($data) {
         $data = trim($data);
@@ -10,7 +9,7 @@
         return $data;
     }
 
-    if ((isset($_POST["username"])) && (isset($_POST["email"])) && (isset($_POST["password"]) && (isset($_POST["user_type"])))) {
+    if ((isset($_POST["first_name"])) && (isset($_POST["last_name"])) && (isset($_POST["phone_number"])) && (isset($_POST["address"])) && (isset($_POST["username"])) && (isset($_POST["email"])) && (isset($_POST["password"])) && (isset($_POST["user_type"]))) {
         require "../../credentials.php";
 
         $conn = mysqli_connect($host, $user, $pass, $name);
