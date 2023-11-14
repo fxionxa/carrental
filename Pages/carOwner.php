@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Owner Page</title>
-<link rel="stylesheet" href="carOwner.css">
+<link rel="stylesheet" href="Style/carOwner.css">
 </head>
 <body>
     <header>
