@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="Style/login.css">
+    <link rel="stylesheet" href="style/login.css">
     
 </head>
 <body>
     <div class="container">
         <h2>Login</h2>
-        <form action="javascript:void(0);" onsubmit="redirectAfterLogin();">
+        <form method="post" action="../routes/process_login.php" onsubmit="redirectAfterLogin();">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required><br>
 
@@ -43,18 +43,14 @@
             const username = document.getElementById("username").value; // Get the entered username
             const password = document.getElementById("password").value; // Get the entered password
 
-            // You should implement logic to verify the credentials
-            // Here, we assume "admin" is an admin account, and others are user accounts
-            if (username === "admin" && password === "adminpassword") {
-                window.location.href = 'admin.php'; // Redirect to the admin page
-            } else if (username === "renter" && password === "renterpassword") {
-                window.location.href = 'renter.php'; // Redirect to the renter page
-            } else if (username === "carowner" && password === "carownerpassword") {
-                window.location.href = 'carowner.php'; // Redirect to the car owner page
-            } else {
-                // Handle invalid credentials or other cases
-                alert("Invalid login credentials. Please try again.");
-            }
+            // Hash the password using SHA-256
+            sha256(password).then(hashedPassword => {
+                // Set the hashed password back into the password field
+                document.getElementById("password").value = hashedPassword;
+
+                // Now, you can submit the form with the hashed password
+                document.forms[0].submit();
+            });
         }
     </script>
 </body>
