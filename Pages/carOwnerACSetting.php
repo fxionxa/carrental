@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Settings</title>
-<link rel="stylesheet" href="carOwnerACSetting.css">
+<link rel="stylesheet" href="Style/carOwnerACSetting.css">
 </head>
 <body>
     <header>
