@@ -34,11 +34,12 @@
 
         input[type="text"],
         input[type="password"] {
-            width: 100%;
+            width: calc(100% - 22px); /* Adjusting width to account for border and padding */
             padding: 10px;
             margin: 8px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
+            box-sizing: border-box; /* Consider border and padding in width */
         }
 
         input[type="submit"] {
