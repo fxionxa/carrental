@@ -55,7 +55,7 @@
             align-items: center;
             height: 100vh;
         }
-
+        
         .container {
             width: 100%;
             max-width: 400px;
@@ -63,6 +63,8 @@
             background-color: #fff;
             border: 1px solid #ccc;
             border-radius: 5px;
+            text-align: left; /* Align text inside container to the left */
+            margin: 0 auto; /* Center the container horizontally */
         }
 
         h2 {
@@ -79,12 +81,14 @@
         input[type="password"],
         input[type="email"],
         input[type="tel"] {
-            width: 100%;
+            width: calc(100% - 22px); /* Adjusting width to account for border and padding */
             padding: 10px;
             margin: 8px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
+            box-sizing: border-box; /* Consider border and padding in width */
         }
+
 
         input[type="radio"] {
             margin: 5px;
