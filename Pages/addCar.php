@@ -56,7 +56,7 @@
             console.log("License Plate:", licensePlate);
 
             // For demonstration purposes, you can redirect to the car listings page
-           // window.location.href = "carListing.php";
+            window.location.href = "carListing.php";
         });
     </script>
 </body>
