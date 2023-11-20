@@ -1,4 +1,21 @@
 <!-- SJSU CMPE 138 FALL 2023 TEAM9-->
+<?php
+    session_start();
+
+    unset($_SESSION["listing_error"]);
+
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
+    if (!isset($_SESSION["user_id"])) {
+        header('Location: '.$uri.'/carrental/pages/login.php');
+        exit();
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,19 +31,45 @@
     </header>
 
     <div class="container">
-        <h2>Search for Available Cars</h2>
-        <p>Use the search filters to find the perfect car for your trip.</p>
+        <h2>Available Cars</h2>
+        <?php
+            require "../../credentials.php";
 
-        <!-- Search Filters (You can customize this part) -->
-        <label for="location">Location:</label>
-        <input type="text" id="location" placeholder="Enter location">
-        
-        <label for="dates">Dates:</label>
-        <input type="date" id="dates">
+            $conn = mysqli_connect($host, $user, $pass, $name);
 
-        <button class="button">Search</button>
-        
-        <a href="renter.php"><button class="back-button">Back to Previous Page</button></a>
+            if (!$conn) { 
+                die("Connection failed: " . mysqli_connect_error());
+            }
+
+            $uid = $_SESSION["user_id"];
+            $sql = "SELECT cars.*, listings.price_per_day, listings.is_available FROM cars, listings WHERE cars.car_id = listings.car_id";
+            $result = mysqli_query($conn,$sql);
+
+            if($result) {
+                while ($row = $result->fetch_assoc()) {
+                    if($row["is_available"] == 1){
+                        $carID = $row["car_id"];
+                        $make = $row["make"];
+                        $model = $row["model"];
+                        $year = $row["year"];
+                        $pricePerDay = $row["price_per_day"];
+
+                        echo "
+                        <div class='car-listing'>
+                        <h3>Car ID: $carID</h3>
+                        <p>Make: $make</p>
+                        <p>Model: $model</p>
+                        <p>Year: $year</p>
+                        <p>Price Per Day: $pricePerDay</p>
+                        </div>
+                    ";
+                    }
+                }
+            }
+        ?>
+    </div>
+    <div class="container">
+    <a href="renter.php"><button class="back-button">Back to Previous Page</button></a>
     </div>
 </body>
 </html>
