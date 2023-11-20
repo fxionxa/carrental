@@ -16,7 +16,7 @@
     <div class="container">
         <h2>Add An New Car</h2>
 
-        <form id="addCarForm">
+        <form action="../routes/process_addCar.php" method="POST" id="addCarForm">
             <div>
                 <label for="make">Make:</label>
                 <input type="text" id="make" name="make" required>
@@ -38,26 +38,5 @@
 
         <a href="carListing.php"><button class="button">Back to Car Listings</button></a>
     </div>
-
-    <script>
-        document.getElementById("addCarForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            // Gather form data
-            const formData = new FormData(event.target);
-            const make = formData.get("make");
-            const model = formData.get("model");
-            const year = formData.get("year");
-            const licensePlate = formData.get("licensePlate");
-
-            // Here, you can handle the form data (e.g., send it to a server, add to a list, etc.)
-            console.log("Make:", make);
-            console.log("Model:", model);
-            console.log("Year:", year);
-            console.log("License Plate:", licensePlate);
-
-            // For demonstration purposes, you can redirect to the car listings page
-            window.location.href = "carListing.php";
-        });
-    </script>
 </body>
 </html>
