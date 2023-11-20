@@ -6,70 +6,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Settings</title>
-<link rel="stylesheet" href="Style/carOwnerACSetting.css">
+    <link rel="stylesheet" href="Style/accountSetting.css">
+    <script>
+        // SHA-256 hashing function
+        function sha256(plain) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(plain);
+            return window.crypto.subtle.digest('SHA-256', data).then(buffer => {
+                let hashArray = Array.from(new Uint8Array(buffer));
+                let hashHex = hashArray.map(byte => byte.toString(16).padStart(2, '0')).join('');
+                return hashHex;
+            });
+        }
+
+        function hashPasswordAndSubmit() {
+            event.preventDefault(); // Prevent the form from submitting
+
+            const username = document.getElementById("username").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const cpassword = document.getElementById("confirm_password").value;
+
+            // Hash the password using SHA-256
+            sha256(password).then(hashedPassword => {
+                // Set the hashed password back into the password field
+                document.getElementById("password").value = hashedPassword;
+
+                // Now, you can submit the form with the hashed password
+                document.forms[0].submit();
+            });
+
+            sha256(cpassword).then(chashedPassword => {
+                // Set the hashed password back into the password field
+                document.getElementById("confirm_password").value = chashedPassword;
+
+                // Now, you can submit the form with the hashed password
+                document.forms[0].submit();
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>Account Settings</h1>
     </header>
-
+    <br>
     <div class="container">
-        <h2>Update Profile Information</h2>
-        <form action="javascript:void(0);" onsubmit="updateProfile();">
-            <div class="form-group">
-                <label for="ownerName">Owner Name:</label>
-                <input type="text" id="ownerName" name="ownerName" required>
-            </div>
+        <h2>Update Your Profile Information</h2>
 
-            <div class "form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+        <form action="../routes/process_carOwnerACSetting.php" method="POST" onsubmit="hashPasswordAndSubmit();">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
 
-            <div class="form-group">
-                <label for="password">New Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
 
-            <div class="form-group">
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
-            </div>
+            <label for="password">New Password:</label>
+            <input type="password" id="password" name="password" required><br>
 
-            <input type="submit" class="button" value="Update Profile">
-        </form>
+            <label for="confirm_password">Confirm New Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required><br>
 
-        <h2>Update Preferences</h2>
-        <form action="javascript:void(0);" onsubmit="updatePreferences();">
-            <div class="form-group">
-                <label for="carType">Preferred Car Type:</label>
-                <input type="text" id="carType" name="carType">
-            </div>
-
-            <div class="form-group">
-                <label for="location">Preferred Location:</label>
-                <input type="text" id="location" name="location">
-            </div>
-
-            <input type="submit" class="button" value="Update Preferences">
-        </form>
-        
-        <!-- Add a space here -->
-        <div style="margin-bottom: 20px;"></div>
-        
+            <button class="button">Update Profile</button>
+        </form> 
+        </div>       
+    </div>
+    <br>
+    <div class="container">
         <a href="carOwner.php"><button class="back-button">Back to Previous Page</button></a>
     </div>
-
-    <script>
-        function updateProfile() {
-            // Handle updating profile information here
-            alert("Profile information updated!");
-        }
-
-        function updatePreferences() {
-            // Handle updating preferences here
-            alert("Preferences updated!");
-        }
-    </script>
 </body>
 </html>

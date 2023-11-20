@@ -50,7 +50,7 @@
     <header>
         <h1>Account Settings</h1>
     </header>
-
+    <br>
     <div class="container">
         <h2>Update Your Profile Information</h2>
 
@@ -68,12 +68,11 @@
             <input type="password" id="confirm_password" name="confirm_password" required><br>
 
             <button class="button">Update Profile</button>
-        </form>
-
-        <h2>Change Your Preferences</h2>
-
-        <!-- Add more preferences fields here -->
-
+        </form> 
+        </div>       
+    </div>
+    <br>
+    <div class="container">
         <a href="renter.php"><button class="back-button">Back to Previous Page</button></a>
     </div>
 </body>
