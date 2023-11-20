@@ -24,7 +24,7 @@
 
         <h2>Logout</h2>
         <p>Click the button below to logout.</p>
-        <a href="login.php"><button class="button logout-button">Logout</button></a>
+        <a href="../routes/process_logout.php"><button class="button logout-button">Logout</button></a>
     </div>
 </body>
 </html>
