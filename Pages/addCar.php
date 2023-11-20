@@ -34,8 +34,7 @@
                 <input type="text" id="licensePlate" name="licensePlate" required>
             </div>
             <button type="submit" class="button">Add Car</button>
-        </form>
-
+        </form> 
         <a href="carListing.php"><button class="button">Back to Car Listings</button></a>
     </div>
 </body>
