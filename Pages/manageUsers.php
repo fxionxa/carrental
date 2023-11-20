@@ -1,4 +1,21 @@
 <!-- SJSU CMPE 138 FALL 2023 TEAM9-->
+<?php
+    session_start();
+
+    unset($_SESSION["listing_error"]);
+
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
+    if (!isset($_SESSION["user_id"])) {
+        header('Location: '.$uri.'/carrental/pages/login.php');
+        exit();
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,68 +32,57 @@
 
     <div class="container">
         <h2>User List</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>User ID</th>
-                    <th>Username</th>
-                    <th>Email</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>User1</td>
-                    <td>user1@example.com</td>
-                    <td>
-                        <button class="button" onclick="editUser(1)">Edit</button>
-                        <button class="button" onclick="deleteUser(1)">Delete</button>
-                        <button class="button" onclick="resetPassword(1)">Reset Password</button>
-                        <button class="button" onclick="refundUser(1)">Refund</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>User2</td>
-                    <td>user2@example.com</td>
-                    <td>
-                        <button class="button" onclick="editUser(2)">Edit</button>
-                        <button class="button" onclick="deleteUser(2)">Delete</button>
-                        <button class="button" onclick="resetPassword(2)">Reset Password</button>
-                        <button class="button" onclick="refundUser(2)">Refund</button>
-                    </td>
-                </tr>
-                <!-- Add more user rows as needed -->
-            </tbody>
-        </table>
+        <?php
+            require "../../credentials.php";
+
+            $conn = mysqli_connect($host, $user, $pass, $name);
+
+            if (!$conn) { 
+                die("Connection failed: " . mysqli_connect_error());
+            }
+
+            $uid = $_SESSION["user_id"];
+            $sql = "SELECT * FROM users";
+            $result = mysqli_query($conn,$sql);
+
+            if($result) {
+                while ($row = $result->fetch_assoc()) {
+                    $userID = $row["user_id"];
+                    $username = $row["username"];
+                    $email = $row["email"];
+                    
+                    echo "
+                    <table>
+                        <thread>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>$userID</td>
+                                <td>$username</td>
+                                <td>$email</td>
+                                <td>
+                                    <button class='button' onclick='editUser(1)'>Edit</button>
+                                    <button class='button' onclick='deleteUser(1)'>Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>                                    
+                ";
+                }
+            }
+        ?>
         
         <!-- Back to Previous Page Button -->
-        <a href="admin.php">
-            <button class="button">Back to Previous Page</button>
-        </a>
     </div>
-
-    <script>
-        function editUser(userId) {
-            // Handle editing user with ID userId
-            alert(`Edit user with ID ${userId}`);
-        }
-
-        function deleteUser(userId) {
-            // Handle deleting user with ID userId
-            alert(`Delete user with ID ${userId}`);
-        }
-
-        function resetPassword(userId) {
-            // Handle resetting the password for user with ID userId
-            alert(`Reset password for user with ID ${userId}`);
-        }
-
-        function refundUser(userId) {
-            // Handle refunding user with ID userId
-            alert(`Refund user with ID ${userId}`);
-        }
-    </script>
+    
+    <div class="container">
+    <a href="admin.php"><button class="button">Back to Previous Page</button></a>
+    </div>
 </body>
 </html>
