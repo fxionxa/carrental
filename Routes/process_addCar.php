@@ -35,9 +35,9 @@
         $sql = "INSERT INTO cars VALUES(null, $uid, '$make', '$model', $year, '$licensePlate')";
         $results = mysqli_query($conn, $sql);
 
-        header('Location: '.$uri.'/carrental/pages/addCar.php');
+        header('Location: '.$uri.'/carrental/pages/carListing.php');
         exit();    
     }
-    header('Location: '.$uri.'/carrental/pages/addCar.php');
+    header('Location: '.$uri.'/carrental/pages/carListing.php');
     exit();
 ?>

@@ -33,9 +33,9 @@
         $sql = "INSERT INTO listings VALUES(null, $carID, '$startDate', '$pricePerDay', DEFAULT, $uid)";
         $results = mysqli_query($conn, $sql);
 
-        header('Location: '.$uri.'/carrental/pages/addListing.php');
+        header('Location: '.$uri.'/carrental/pages/carListing.php');
         exit();    
     }
-    header('Location: '.$uri.'/carrental/pages/addListing.php');
+    header('Location: '.$uri.'/carrental/pages/carListing.php');
     exit();
 ?>
