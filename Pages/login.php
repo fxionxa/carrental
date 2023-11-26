@@ -7,10 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="style/login.css">
-    
+
 </head>
+
 <body>
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
+
     <div class="container">
+        
         <h2>Login</h2>
         <form method="post" action="../routes/process_login.php" onsubmit="redirectAfterLogin();">
             <label for="username">Username:</label>
