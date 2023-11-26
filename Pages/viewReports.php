@@ -15,6 +15,10 @@
 
     <!-- This Part need to modified. The data should retrieve from the database-->
 
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
+    
     <div class="container">
         <h2>Incident Reports</h2>
 

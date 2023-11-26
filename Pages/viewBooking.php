@@ -13,6 +13,10 @@
         <h1>View Bookings</h1>
     </header>
 
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
+
     <div class="container">
         <h2>Your Bookings</h2>
         <p>View and manage your upcoming and past bookings.</p>

@@ -7,11 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Owner Page</title>
 <link rel="stylesheet" href="Style/carOwner.css">
+
 </head>
 <body>
+
     <header>
         <h1>Welcome, Car Owner!</h1>
     </header>
+
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
 
     <div class="container">
         <h2>Your Car Listings</h2>

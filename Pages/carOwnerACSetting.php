@@ -51,6 +51,11 @@
         <h1>Account Settings</h1>
     </header>
     <br>
+
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
+
     <div class="container">
         <h2>Update Your Profile Information</h2>
 

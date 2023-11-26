@@ -45,14 +45,24 @@
             });
         }
     </script>
+    
 </head>
 <body>
+
+
     <header>
         <h1>Account Settings</h1>
     </header>
+
+
     <br>
+    <div class="imgheader">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
     <div class="container">
+        
         <h2>Update Your Profile Information</h2>
+
 
         <form action="../routes/process_accountSetting.php" method="POST" onsubmit="hashPasswordAndSubmit();">
             <label for="username">Username:</label>

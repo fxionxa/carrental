@@ -46,6 +46,9 @@
     </script>
 </head>
 <body>
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
     <div class="container">
         <h2>Registration</h2>
         <form method="post" action="../routes/process_register.php" onsubmit="hashPasswordAndSubmit(event);">

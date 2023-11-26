@@ -13,8 +13,14 @@
         <h1>Add Car</h1>
     </header>
 
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
+
     <div class="container">
         <h2>Add An New Car</h2>
+
+
 
         <form action="../routes/process_addCar.php" method="POST" id="addCarForm">
             <div>

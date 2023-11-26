@@ -13,6 +13,10 @@
         <h1>Welcome, Renter!</h1>
     </header>
 
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
+
     <div class="container">
         <h2>Find a Car to Rent</h2>
         <p>Search for available cars in your area and book them for your trips.</p>
