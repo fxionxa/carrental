@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
-    <link rel="stylesheet" href="Style/register.css">
+    <link rel="stylesheet" href="Style/login.css">
     <script>
         // SHA-256 hashing function
         function sha256(plain) {
@@ -46,34 +46,38 @@
     </script>
 </head>
 <body>
-<!--     <div class="header">
-        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
-    </div> -->
     <div class="container">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
         <h2>Registration</h2>
         <form method="post" action="../routes/process_register.php" onsubmit="hashPasswordAndSubmit(event);">
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name" required>
+            <div class="ibox">        
+                <input type="text" id="first_name" name="first_name" placeholder="First Name" required> 
+            </div>
 
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name" required>
+            <div class="ibox">
+                <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+            </div>
 
-            <label for="phone_number">Phone Number:</label>
-            <input type="tel" id="phone_number" name="phone_number" required>
+            <div class="ibox">
+                <input type="tel" id="phone_number" name="phone_number" placeholder="Phone Number" required>
+            </div>
 
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" required>
+            <div class="ibox">
+                <input type="text" id="address" name="address" placeholder="Address" required>
+            </div>
 
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <div class="ibox">
+                <input type="text" id="username" name="username" placeholder ="Username" required>
+            </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <div class="ibox">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            
+            <div class="ibox">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <label>Renter/Car Owner?</label>
             <div class="radio-group">
                 <input type="radio" id="renter" name="user_type" value="renter" required>
                 <label for="renter">Renter</label>
@@ -81,11 +85,12 @@
                 <input type="radio" id="car_owner" name="user_type" value="car_owner" required>
                 <label for="car_owner">Car Owner</label><br>
             </div>
+            <br>
 
-            <input type="submit" value="Register">
+            <button type="submit" class="btn">Register</button>
         </form>
 
-        <p class="go-back-link"><a href="login.php">Go Back to Login Page</a></p>
+        <p class="register-link"><a href="login.php">Go Back to Login Page</a></p>
     </div>
 </body>
 </html>
