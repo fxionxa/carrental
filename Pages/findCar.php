@@ -23,7 +23,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find a Car to Rent</title>
-<link rel="stylesheet" href="Style/findCar.css">
+<link rel="stylesheet" href="Style/renter.css">
 </head>
 <body>
     <header>
@@ -69,7 +69,7 @@
         ?>
     </div>
     <div class="container">
-    <a href="renter.php"><button class="back-button">Back to Previous Page</button></a>
+    <a href="bookings.php"><button class="button">Book Car</button></a> <a href="renter.php"><button class="button">Back to Previous Page</button></a>
     </div>
 </body>
 </html>

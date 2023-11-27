@@ -50,9 +50,8 @@ body {
   padding: 0px 10px;
 }
 
-td input:focus{
+.ibox input:focus{
   background: transparent;
-  border-color: black;
 }
 
 .ibox input::placeholder{
