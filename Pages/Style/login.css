@@ -2,7 +2,8 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f5f5f5;
+  background: url('background.png') no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
   display: flex;
@@ -15,12 +16,81 @@ body {
   width: 100%;
   max-width: 400px;
   margin: 250px auto;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  padding: 30px 40px;
+  background-color: transparent;
+  border: 1px solid #e6d5a2;
+  backdrop-filter: blur(20px);
   border-radius: 5px;
   text-align: left;
   margin: 0 auto;
+}
+
+.container h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #e6d5a2;
+}
+
+.container .ibox {
+  position: relative;
+  width: 95%;
+  height: 50px;
+  margin: 30px 0;
+  color: #e6d5a2;
+}
+
+.ibox input {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  background: transparent;
+  color: #e6d5a2;
+  border: 1px solid #e6d5a2;
+  border-radius: 40px;
+  padding: 0px 10px;
+}
+
+.ibox input::placeholder{
+  color: #e6d5a2;
+}
+
+.ibox i {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.container .btn {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  background-color: #0012ff;
+  color: #e6d5a2;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.container .btn:hover {
+  background-color: #0025ff;
+  transform: scale(1.05);
+}
+
+.container .register-link {
+  text-align: center;
+  margin: 20px 0 15px;
+  color: #e6d5a2;
+}
+
+.register-link a{
+  text-decoration: none;
+  color: #e6d5a2;
+}
+
+.register-link a:hover{
+  text-decoration: underline;
 }
 
 .header {
@@ -33,13 +103,11 @@ body {
 
 .logo {
   display: block;
-  margin: 0 auto;
-  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100px;
 }
 
-h2 {
-  color: #333;
-}
 
 label {
   display: block;
@@ -47,36 +115,11 @@ label {
   text-align: left;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"] {
-  width: calc(100% - 22px);
-  padding: 10px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
 input[type="radio"] {
   margin: 5px;
 }
 
-input[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
-input[type="submit"]:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-}
 
 .go-back-link {
   margin-top: 10px;

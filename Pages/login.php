@@ -7,27 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="style/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
 <body>
-    <div class="header">
-        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
-    </div>
-
     <div class="container">
-        
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
         <h2>Login</h2>
         <form method="post" action="../routes/process_login.php" onsubmit="redirectAfterLogin();">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br>
+            <div class="ibox">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br>
+            <div class="ibox">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
 
-            <input type="submit" value="Login">
+            <button type="submit" class="btn">Login</button>
 
-            <p class="register-link">Do you have an account? <a href="register.php">Register</a></p>
+            <p class="register-link">Don't have an account? 
+                <a href="register.php">Register</a>
+            </p>
         </form>
     </div>
 
