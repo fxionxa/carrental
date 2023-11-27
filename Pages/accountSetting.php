@@ -48,17 +48,14 @@
     
 </head>
 <body>
-
-
     <header>
         <h1>Account Settings</h1>
     </header>
-
-
-    <br>
-    <div class="imgheader">
+    
+    <div class="header">
         <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
     </div>
+
     <div class="container">
         
         <h2>Update Your Profile Information</h2>
@@ -81,9 +78,8 @@
         </form> 
         </div>       
     </div>
-    <br>
     <div class="container">
-        <a href="renter.php"><button class="back-button">Back to Previous Page</button></a>
+        <a href="renter.php"><button class="button">Back to Previous Page</button></a>
     </div>
 </body>
 </html>

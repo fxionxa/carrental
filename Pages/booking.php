@@ -60,7 +60,7 @@
     </div>
 
     <div class="container">
-        <a href="findCar.php"><button class="button">Back to Cars</button></a>
+        <a href="findCar.php"><button class="button">Back to Previous Page</button></a>
     </div>
 </body>
 </html>
