@@ -1,4 +1,21 @@
 <!-- SJSU CMPE 138 FALL 2023 TEAM9-->
+<?php
+    session_start();
+
+    unset($_SESSION["listing_error"]);
+
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
+    if (!isset($_SESSION["user_id"])) {
+        header('Location: '.$uri.'/carrental/pages/login.php');
+        exit();
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">

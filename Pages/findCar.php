@@ -42,13 +42,13 @@
             }
 
             $uid = $_SESSION["user_id"];
-            $sql = "SELECT cars.*, listings.price_per_day, listings.is_available FROM cars, listings WHERE cars.car_id = listings.car_id";
+            $sql = "SELECT cars.*, listings.price_per_day, listings.listing_id, listings.is_available FROM cars, listings WHERE cars.car_id = listings.car_id";
             $result = mysqli_query($conn,$sql);
 
             if($result) {
                 while ($row = $result->fetch_assoc()) {
                     if($row["is_available"] == 1){
-                        $carID = $row["car_id"];
+                        $listingID = $row["listing_id"];
                         $make = $row["make"];
                         $model = $row["model"];
                         $year = $row["year"];
@@ -56,20 +56,22 @@
 
                         echo "
                         <div class='car-listing'>
-                        <h3>Car ID: $carID</h3>
+                        <h3>Listing ID: $listingID</h3>
                         <p>Make: $make</p>
                         <p>Model: $model</p>
                         <p>Year: $year</p>
-                        <p>Price Per Day: $pricePerDay</p>
+                        <p>Price Per Day: $$pricePerDay</p>
                         </div>
                     ";
                     }
                 }
             }
         ?>
+        <br>
+        
     </div>
     <div class="container">
-    <a href="bookings.php"><button class="button">Book Car</button></a> <a href="renter.php"><button class="button">Back to Previous Page</button></a>
+        <a href="booking.php"><button class="button">Book A Car</button></a> <a href="renter.php"><button class="button">Back to Previous Page</button></a>
     </div>
 </body>
 </html>
