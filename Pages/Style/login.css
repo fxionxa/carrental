@@ -85,12 +85,8 @@ body {
 }
 
 .register-link a{
-  text-decoration: none;
-  color: #e6d5a2;
-}
-
-.register-link a:hover{
   text-decoration: underline;
+  color: #e6d5a2;
 }
 
 .header {
