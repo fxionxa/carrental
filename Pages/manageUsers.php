@@ -50,20 +50,20 @@
 
             if($result) {
                 echo "
-                    <table>";
-                while ($row = $result->fetch_assoc()) {
-                    $userID = $row["user_id"];
-                    $username = $row["username"];
-                    $email = $row["email"];
-                    
-                    echo "
+                    <table>
                         <thread>
                             <tr>
                                 <th>User ID</th>
                                 <th>Username</th>
                                 <th>Email</th>
                             </tr>
-                        </thead>
+                        </thead>";
+                while ($row = $result->fetch_assoc()) {
+                    $userID = $row["user_id"];
+                    $username = $row["username"];
+                    $email = $row["email"];
+                    
+                    echo "
                         <tbody>
                             <tr>
                                 <td>$userID</td>
@@ -94,20 +94,20 @@
 
             if($result) {
                 echo "
-                    <table>";
-                while ($row = $result->fetch_assoc()) {
-                    $userID = $row["user_id"];
-                    $username = $row["username"];
-                    $email = $row["email"];
-                    
-                    echo "
+                    <table>
                         <thread>
                             <tr>
                                 <th>User ID</th>
                                 <th>Username</th>
                                 <th>Email</th>
                             </tr>
-                        </thead>
+                        </thead>";
+                while ($row = $result->fetch_assoc()) {
+                    $userID = $row["user_id"];
+                    $username = $row["username"];
+                    $email = $row["email"];
+                    
+                    echo "
                         <tbody>
                             <tr>
                                 <td>$userID</td>
@@ -140,20 +140,21 @@
 
             if($result) {
                 echo "
-                    <table>";
-                while ($row = $result->fetch_assoc()) {
-                    $userID = $row["user_id"];
-                    $username = $row["username"];
-                    $email = $row["email"];
-                    
-                    echo "
+                    <table>
                         <thread>
                             <tr>
                                 <th>User ID</th>
                                 <th>Username</th>
                                 <th>Email</th>
                             </tr>
-                        </thead>
+                        </thead>"
+                ;
+                while ($row = $result->fetch_assoc()) {
+                    $userID = $row["user_id"];
+                    $username = $row["username"];
+                    $email = $row["email"];
+                    
+                    echo "
                         <tbody>
                             <tr>
                                 <td>$userID</td>

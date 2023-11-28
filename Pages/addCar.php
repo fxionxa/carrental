@@ -12,12 +12,14 @@
     <header>
         <h1>Add Car</h1>
     </header>
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
 
 
 
     <div class="container">
 
-        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
 
         <h2>Add An New Car</h2>
 
