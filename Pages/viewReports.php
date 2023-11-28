@@ -1,82 +1,83 @@
 <!-- SJSU CMPE 138 FALL 2023 TEAM9-->
+<?php
+    session_start();
 
+    unset($_SESSION["listing_error"]);
+
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
+    if (!isset($_SESSION["user_id"])) {
+        header('Location: '.$uri.'/carrental/pages/login.php');
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Reports</title>
-    <link rel="stylesheet" href="Style/viewReports.css">
+<link rel="stylesheet" href="Style/renter.css">
 </head>
 <body>
     <header>
         <h1>View Reports</h1>
     </header>
 
-    <!-- This Part need to modified. The data should retrieve from the database-->
-
     <div class="header">
         <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
     </div>
-    
+
     <div class="container">
-        <h2>Incident Reports</h2>
+        <h2>View Reports</h2>
 
-        <!-- Incident Report 1 -->
-        <div class="report">
-            <h3>Incident Report 1</h3>
-            <p>Date: January 10, 2023</p>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button class="button" onclick="viewIncidentReport(1)">View Report</button>
-        </div>
+        <?php
+            require "../../credentials.php";
 
-        <!-- Incident Report 2 -->
-        <div class="report">
-            <h3>Incident Report 2</h3>
-            <p>Date: February 5, 2023</p>
-            <p>Description: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button class="button" onclick="viewIncidentReport(2)">View Report</button>
-        </div>
+            $conn = mysqli_connect($host, $user, $pass, $name);
 
-        <!-- Add more incident reports as needed -->
+            if (!$conn) { 
+                die("Connection failed: " . mysqli_connect_error());
+            }
 
-        <h2>User Feedback</h2>
+            $sql = "SELECT * FROM incidents";
+            $result = mysqli_query($conn,$sql);
 
-        <!-- User Feedback 1 -->
-        <div class="report">
-            <h3>User Feedback 1</h3>
-            <p>Date: March 20, 2023</p>
-            <p>Feedback: The service was excellent. I had a great experience using this platform.</p>
-            <button class="button" onclick="viewUserFeedback(1)">View Feedback</button>
-        </div>
+            if($result) {
+                while ($row = $result->fetch_assoc()) {
+                    
+                    $incidentID = $row["incident_id"];
+                    $userID = $row["user_id"];
+                    $listingID = $row["listing_id"];
+                    $incidentType = $row["incident_type"];
+                    $incidentDate = $row["incident_date"];
+                    $incidentLocation = $row["incident_location"];
+                    $coverage = $row["coverage"];
+                    $incidentDescription = $row["incident_description"];
 
-        <!-- User Feedback 2 -->
-        <div class="report">
-            <h3>User Feedback 2</h3>
-            <p>Date: April 15, 2023</p>
-            <p>Feedback: There were some issues with the app. It needs improvement.</p>
-            <button class="button" onclick="viewUserFeedback(2)">View Feedback</button>
-        </div>
-
-        <!-- Add more user feedback as needed -->
-        
-        
-        <!-- Add more user feedback as needed -->
-        
-        <a href="admin.php"><button class="back-button">Back to Previous Page</button></a>
+                    echo "
+                    <div class='car-listing'>
+                    <h3>Incident ID: $incidentID</h3>
+                    <p>User ID: $userID</p>
+                    <p>Listing ID: $listingID</p>
+                    <p>Incident Type: $incidentType</p>
+                    <p>Incident Date: $incidentDate</p>
+                    <p>Incident Location: $incidentLocation</p>
+                    <p>Coverage: $coverage</p>
+                    <p>Incident Description: $incidentDescription</p>
+                    </div>
+                ";   
+                }
+            }
+        ?>
     </div>
-
-
-    <script>
-        function viewIncidentReport(reportId) {
-            // Handle viewing the incident report with ID reportId
-            alert(`Viewing Incident Report ${reportId}`);
-        }
-
-        function viewUserFeedback(feedbackId) {
-            // Handle viewing the user feedback with ID feedbackId
-            alert(`Viewing User Feedback ${feedbackId}`);
-        }
-    </script>
+    <div class="container">
+        <a href="admin.php"><button class="button">Back to Previous Page</button></a>
+    </div>
 </body>
 </html>
