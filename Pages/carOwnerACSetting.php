@@ -71,14 +71,13 @@
 
             <label for="confirm_password">Confirm New Password:</label>
             <input type="password" id="confirm_password" name="confirm_password" required><br>
-
+            <br>
             <button class="button">Update Profile</button>
         </form> 
         </div>       
     </div>
-    <br>
     <div class="container">
-        <a href="carOwner.php"><button class="back-button">Back to Previous Page</button></a>
+        <a href="carOwner.php"><button class="button">Back to Previous Page</button></a>
     </div>
 </body>
 </html>

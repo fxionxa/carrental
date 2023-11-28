@@ -12,7 +12,10 @@
     <header>
         <h1>Welcome, Admin!</h1>
     </header>
-
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
+    
     <div class="container">
         <h2>Manage Users</h2>
         <p>View and manage user accounts, including password resets and refunds.</p>

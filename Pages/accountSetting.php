@@ -73,7 +73,7 @@
 
             <label for="confirm_password">Confirm New Password:</label>
             <input type="password" id="confirm_password" name="confirm_password" required><br>
-
+            <br>
             <button class="button">Update Profile</button>
         </form> 
         </div>       

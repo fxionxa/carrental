@@ -22,7 +22,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Listings</title>
-<link rel="stylesheet" href="Style/carListing.css">
+<link rel="stylesheet" href="Style/carOwner.css">
 </head>
 <body>
     <header>
@@ -61,7 +61,7 @@
                     </div>
                     ";
                 }
-                echo "<a href='addListing.php'><button class='button'>Add Listing</button></a>";
+                echo "<br><a href='addListing.php'><button class='button'>Add Listing</button></a>";
             }
         ?>
     </div>
@@ -91,7 +91,7 @@
                 </div>
                 ";
             }
-            echo "<a href='addCar.php'><button class='button'>Add Car</button></a>";
+            echo "<br><a href='addCar.php'><button class='button'>Add Car</button></a>";
         }
     ?>
 </div>    
