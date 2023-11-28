@@ -14,11 +14,12 @@
     <header>
         <h1>Welcome, Car Owner!</h1>
     </header>
-
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
 
 
     <div class="container">
-    <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
         <h2>Your Car Listings</h2>
         <p>Manage your car listings and rental information.</p>
         <a href="carListing.php"><button class="button">Manage Listings</button></a>
