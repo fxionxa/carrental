@@ -22,7 +22,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Listing</title>
-<link rel="stylesheet" href="Style/carListing.css">
+<link rel="stylesheet" href="Style/carOwner.css">
 </head>
 <body>
     <header>
@@ -37,16 +37,21 @@
                 <label for="carID">Car ID:</label>
                 <input type="text" id="carID" name="carID" required>
             </div>
+            <br>
             <div>
                 <label for="startDate">Start Date:</label>
                 <input type="date" id="startDate" name="startDate" required>
             </div>
+            <br>
             <div>
                 <label for="pricePerDay">Price Per Day:</label>
                 <input type="decimal" id="pricePerDay" name="pricePerDay" required>
             </div>
+            <br>
             <button type="submit" class="button">Add Listing</button>
         </form> 
+    </div>
+    <div class="container">
         <a href="carListing.php"><button class="button">Back to Car Listings</button></a>
     </div>
 </body>

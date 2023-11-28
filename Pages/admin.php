@@ -12,15 +12,22 @@
     <header>
         <h1>Welcome, Admin!</h1>
     </header>
-
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
+    
     <div class="container">
         <h2>Manage Users</h2>
         <p>View and manage user accounts, including password resets and refunds.</p>
         <a href="manageUsers.php"><button class="button">Manage Users</button></a>
 
         <h2>View Reports</h2>
-        <p>Access and review incident reports and user feedback.</p>
+        <p>Access and review incident reports.</p>
         <a href="viewReports.php"><button class="button">View Reports</button></a>
+
+        <h2>View Feedback</h2>
+        <p>View cutomer's feedback on their experience.</p>
+        <a href="viewReviews.php"><button class="button">View Feedback</button></a>
 
         <h2>Logout</h2>
         <p>Click the button below to logout.</p>

@@ -29,9 +29,12 @@
     <header>
         <h1>Manage Users</h1>
     </header>
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
 
     <div class="container">
-        <h2>User List</h2>
+        <h2>Renters</h2>
         <?php
             require "../../credentials.php";
 
@@ -42,23 +45,23 @@
             }
 
             $uid = $_SESSION["user_id"];
-            $sql = "SELECT * FROM users";
+            $sql = "SELECT * FROM users WHERE user_type = 'renter'";
             $result = mysqli_query($conn,$sql);
 
             if($result) {
+                echo "
+                    <table>";
                 while ($row = $result->fetch_assoc()) {
                     $userID = $row["user_id"];
                     $username = $row["username"];
                     $email = $row["email"];
                     
                     echo "
-                    <table>
                         <thread>
                             <tr>
                                 <th>User ID</th>
                                 <th>Username</th>
                                 <th>Email</th>
-                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -66,21 +69,114 @@
                                 <td>$userID</td>
                                 <td>$username</td>
                                 <td>$email</td>
-                                <td>
-                                    <button class='button' onclick='editUser(1)'>Edit</button>
-                                    <button class='button' onclick='deleteUser(1)'>Delete</button>
-                                </td>
                             </tr>
-                        </tbody>
-                    </table>                                    
+                        </tbody>                                    
                 ";
                 }
+                echo "</table>";
             }
         ?>
+        <form method="POST" id="manageUsers">
+            <br>
+            <div>
+                <label for="userID">Renter ID:</label>
+                <input type="text" id="userID" name="userID" required> 
+                <button formaction="../routes/process_makeAdmin.php" type="submit" class="button">Make Admin</button> <button formaction="../routes/process_deleteUser.php" type="submit" class="button delete-button">Delete User</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Owners</h2>
+        <?php
+            $sql = "SELECT * FROM users WHERE user_type = 'owner'";
+            $result = mysqli_query($conn,$sql);
+
+            if($result) {
+                echo "
+                    <table>";
+                while ($row = $result->fetch_assoc()) {
+                    $userID = $row["user_id"];
+                    $username = $row["username"];
+                    $email = $row["email"];
+                    
+                    echo "
+                        <thread>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>$userID</td>
+                                <td>$username</td>
+                                <td>$email</td>
+                            </tr>
+                        </tbody>                                    
+                ";
+                }
+                echo "</table>";
+            }
+        ?>
+        <form method="POST" id="manageUsers">
+            <br>
+            <div>
+                <label for="userID">Owner ID:</label>
+                <input type="text" id="userID" name="userID" required> 
+                <button formaction="../routes/process_makeAdmin.php" type="submit" class="button">Make Admin</button> <button formaction="../routes/process_deleteUser.php" type="submit" class="button delete-button">Delete User</button>
+            </div>
+        </form>
         
         <!-- Back to Previous Page Button -->
     </div>
-    
+
+    <div class="container">
+        <h2>Admins</h2>
+        <?php
+            $sql = "SELECT * FROM users WHERE user_type = 'admin'";
+            $result = mysqli_query($conn,$sql);
+
+            if($result) {
+                echo "
+                    <table>";
+                while ($row = $result->fetch_assoc()) {
+                    $userID = $row["user_id"];
+                    $username = $row["username"];
+                    $email = $row["email"];
+                    
+                    echo "
+                        <thread>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>$userID</td>
+                                <td>$username</td>
+                                <td>$email</td>
+                            </tr>
+                        </tbody>                                    
+                ";
+                }
+                echo "</table>";
+            }
+        ?>
+        <form method="POST" id="manageUsers">
+            <br>
+            <div>
+                <label for="userID">Admin ID:</label>
+                <input type="text" id="userID" name="userID" required> 
+                <button formaction="../routes/process_deleteUser.php" type="submit" class="button delete-button">Delete User</button>
+            </div>
+        </form>
+        <!-- Back to Previous Page Button -->
+    </div>
+
     <div class="container">
     <a href="admin.php"><button class="button">Back to Previous Page</button></a>
     </div>

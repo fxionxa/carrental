@@ -26,7 +26,7 @@
 </head>
 <body>
     <header>
-        <h1>View Reports</h1>
+        <h1>View Feedback</h1>
     </header>
 
     <div class="header">
@@ -34,7 +34,7 @@
     </div>
 
     <div class="container">
-        <h2>View Reports</h2>
+        <h2>View Feedback</h2>
 
         <?php
             require "../../credentials.php";
@@ -45,31 +45,25 @@
                 die("Connection failed: " . mysqli_connect_error());
             }
 
-            $sql = "SELECT * FROM incidents";
+            $sql = "SELECT * FROM reviews";
             $result = mysqli_query($conn,$sql);
 
             if($result) {
                 while ($row = $result->fetch_assoc()) {
                     
-                    $incidentID = $row["incident_id"];
+                    $reviewID = $row["review_id"];
                     $userID = $row["user_id"];
                     $listingID = $row["listing_id"];
-                    $incidentType = $row["incident_type"];
-                    $incidentDate = $row["incident_date"];
-                    $incidentLocation = $row["incident_location"];
-                    $coverage = $row["coverage"];
-                    $incidentDescription = $row["incident_description"];
+                    $rating = $row["rating"];
+                    $comment = $row["comment"];
 
                     echo "
                     <div class='car-listing'>
-                    <h3>Incident ID: $incidentID</h3>
+                    <h3>Review ID: $reviewID</h3>
                     <p>User ID: $userID</p>
                     <p>Listing ID: $listingID</p>
-                    <p>Incident Type: $incidentType</p>
-                    <p>Incident Date: $incidentDate</p>
-                    <p>Incident Location: $incidentLocation</p>
-                    <p>Coverage: $coverage</p>
-                    <p>Incident Description: $incidentDescription</p>
+                    <p>Rating: $rating</p>
+                    <p>Comment: $comment</p>
                     </div>
                 ";   
                 }

@@ -42,6 +42,14 @@
         <h2>Your Bookings</h2>
         <p>View and manage your upcoming and past bookings.</p>
         <a href="viewBooking.php"><button class="button">View Bookings</button></a>
+        
+        <h2>Make A Report</h2>
+        <p>Report incidents that occured during your renting period.</p>
+        <a href="makeReport.php"><button class="button">Make A Report</button></a>
+
+        <h2>Write A Review</h2>
+        <p>Give us feedback from your experience.</p>
+        <a href="writeReview.php"><button class="button">Write A Review</button></a>
 
         <h2>Account Settings</h2>
         <p>Update your profile information and preferences.</p>

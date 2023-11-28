@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Car</title>
-    <link rel="stylesheet" href="Style/carListing.css">
+    <link rel="stylesheet" href="Style/carOwner.css">
 </head>
 <body>
     <header>
@@ -28,21 +28,27 @@
                 <label for="make">Make:</label>
                 <input type="text" id="make" name="make" required>
             </div>
+            <br>
             <div>
                 <label for="model">Model:</label>
                 <input type="text" id="model" name="model" required>
             </div>
+            <br>
             <div>
                 <label for="year">Year:</label>
                 <input type="number" id="year" name="year" required>
             </div>
+            <br>
             <div>
                 <label for="licensePlate">License Plate:</label>
                 <input type="text" id="licensePlate" name="licensePlate" required>
             </div>
+            <br>
             <button type="submit" class="button">Add Car</button>
         </form>
-
+    </div>
+    
+    <div class="container">
         <a href="carListing.php"><button class="button">Back to Car Listings</button></a>
     </div>
 </body>
