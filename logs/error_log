@@ -1,0 +1,128 @@
+[Thu Nov 09 11:26:07.634981 2023] [ssl:warn] [pid 20304] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu Nov 09 11:26:07.635362 2023] [ssl:warn] [pid 20304] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Nov 09 11:26:07.794515 2023] [ssl:warn] [pid 20305] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu Nov 09 11:26:07.794553 2023] [ssl:warn] [pid 20305] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Nov 09 11:26:07.794770 2023] [lbmethod_heartbeat:notice] [pid 20305] AH02282: No slotmem from mod_heartmonitor
+[Thu Nov 09 11:26:07.819824 2023] [mpm_prefork:notice] [pid 20305] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Thu Nov 09 11:26:07.819889 2023] [core:notice] [pid 20305] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Thu Nov 09 11:26:40.238470 2023] [mpm_prefork:notice] [pid 20305] AH00169: caught SIGTERM, shutting down
+[Tue Nov 14 02:24:55.006973 2023] [ssl:warn] [pid 22524] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Nov 14 02:24:55.007398 2023] [ssl:warn] [pid 22524] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Nov 14 02:24:55.146063 2023] [ssl:warn] [pid 22525] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Nov 14 02:24:55.146114 2023] [ssl:warn] [pid 22525] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Nov 14 02:24:55.146335 2023] [lbmethod_heartbeat:notice] [pid 22525] AH02282: No slotmem from mod_heartmonitor
+[Tue Nov 14 02:24:55.169439 2023] [mpm_prefork:notice] [pid 22525] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Tue Nov 14 02:24:55.169510 2023] [core:notice] [pid 22525] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Tue Nov 14 02:30:20.148820 2023] [mpm_prefork:notice] [pid 22525] AH00169: caught SIGTERM, shutting down
+[Tue Nov 14 16:30:12.738017 2023] [ssl:warn] [pid 29856] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Nov 14 16:30:12.738496 2023] [ssl:warn] [pid 29856] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Nov 14 16:30:12.866071 2023] [ssl:warn] [pid 29857] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Nov 14 16:30:12.866117 2023] [ssl:warn] [pid 29857] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Nov 14 16:30:12.866323 2023] [lbmethod_heartbeat:notice] [pid 29857] AH02282: No slotmem from mod_heartmonitor
+[Tue Nov 14 16:30:12.888974 2023] [mpm_prefork:notice] [pid 29857] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Tue Nov 14 16:30:12.889042 2023] [core:notice] [pid 29857] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Tue Nov 14 16:33:17.779915 2023] [mpm_prefork:notice] [pid 29857] AH00169: caught SIGTERM, shutting down
+[Tue Nov 14 16:36:03.631412 2023] [ssl:warn] [pid 30779] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Nov 14 16:36:03.631750 2023] [ssl:warn] [pid 30779] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Nov 14 16:36:03.753891 2023] [ssl:warn] [pid 30780] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Nov 14 16:36:03.753961 2023] [ssl:warn] [pid 30780] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Nov 14 16:36:03.754149 2023] [lbmethod_heartbeat:notice] [pid 30780] AH02282: No slotmem from mod_heartmonitor
+[Tue Nov 14 16:36:03.776375 2023] [mpm_prefork:notice] [pid 30780] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Tue Nov 14 16:36:03.776434 2023] [core:notice] [pid 30780] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Tue Nov 14 16:45:38.929387 2023] [php:error] [pid 30784] [client ::1:64364] script '/Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/acciuntSetting.php' not found or unable to stat
+[Tue Nov 14 17:03:10.547683 2023] [mpm_prefork:notice] [pid 30780] AH00169: caught SIGTERM, shutting down
+[Thu Nov 16 17:19:12.665973 2023] [ssl:warn] [pid 49534] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu Nov 16 17:19:12.666580 2023] [ssl:warn] [pid 49534] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Nov 16 17:19:12.807362 2023] [ssl:warn] [pid 49593] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu Nov 16 17:19:12.807408 2023] [ssl:warn] [pid 49593] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Nov 16 17:19:12.807628 2023] [lbmethod_heartbeat:notice] [pid 49593] AH02282: No slotmem from mod_heartmonitor
+[Thu Nov 16 17:19:12.838726 2023] [mpm_prefork:notice] [pid 49593] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Thu Nov 16 17:19:12.838798 2023] [core:notice] [pid 49593] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Thu Nov 16 17:19:58.295396 2023] [mpm_prefork:notice] [pid 49593] AH00169: caught SIGTERM, shutting down
+[Sat Nov 18 09:51:13.085907 2023] [ssl:warn] [pid 60993] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 18 09:51:13.086432 2023] [ssl:warn] [pid 60993] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 18 09:51:13.230354 2023] [ssl:warn] [pid 60994] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 18 09:51:13.230401 2023] [ssl:warn] [pid 60994] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 18 09:51:13.230626 2023] [lbmethod_heartbeat:notice] [pid 60994] AH02282: No slotmem from mod_heartmonitor
+[Sat Nov 18 09:51:13.253804 2023] [mpm_prefork:notice] [pid 60994] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Sat Nov 18 09:51:13.253872 2023] [core:notice] [pid 60994] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Sat Nov 18 10:11:14.348219 2023] [mpm_prefork:notice] [pid 60994] AH00169: caught SIGTERM, shutting down
+[Mon Nov 20 15:31:27.171378 2023] [ssl:warn] [pid 6282] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Nov 20 15:31:27.171909 2023] [ssl:warn] [pid 6282] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Nov 20 15:31:27.300400 2023] [ssl:warn] [pid 6283] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Nov 20 15:31:27.300442 2023] [ssl:warn] [pid 6283] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Nov 20 15:31:27.300659 2023] [lbmethod_heartbeat:notice] [pid 6283] AH02282: No slotmem from mod_heartmonitor
+[Mon Nov 20 15:31:27.323068 2023] [mpm_prefork:notice] [pid 6283] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Mon Nov 20 15:31:27.323125 2023] [core:notice] [pid 6283] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Mon Nov 20 15:40:37.640031 2023] [mpm_prefork:notice] [pid 6283] AH00169: caught SIGTERM, shutting down
+[Tue Nov 21 15:16:49.240828 2023] [ssl:warn] [pid 13411] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Nov 21 15:16:49.241641 2023] [ssl:warn] [pid 13411] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Nov 21 15:16:49.372005 2023] [ssl:warn] [pid 13412] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Nov 21 15:16:49.372052 2023] [ssl:warn] [pid 13412] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Nov 21 15:16:49.372259 2023] [lbmethod_heartbeat:notice] [pid 13412] AH02282: No slotmem from mod_heartmonitor
+[Tue Nov 21 15:16:49.396381 2023] [mpm_prefork:notice] [pid 13412] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Tue Nov 21 15:16:49.396451 2023] [core:notice] [pid 13412] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Tue Nov 21 15:21:51.081004 2023] [mpm_prefork:notice] [pid 13412] AH00169: caught SIGTERM, shutting down
+[Sat Nov 25 15:32:34.490132 2023] [ssl:warn] [pid 15310] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 25 15:32:34.492030 2023] [ssl:warn] [pid 15310] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 25 15:32:34.620312 2023] [ssl:warn] [pid 15311] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 25 15:32:34.620358 2023] [ssl:warn] [pid 15311] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 25 15:32:34.620549 2023] [lbmethod_heartbeat:notice] [pid 15311] AH02282: No slotmem from mod_heartmonitor
+[Sat Nov 25 15:32:34.642598 2023] [mpm_prefork:notice] [pid 15311] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Sat Nov 25 15:32:34.642663 2023] [core:notice] [pid 15311] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Sat Nov 25 21:28:53.081092 2023] [mpm_prefork:notice] [pid 15311] AH00169: caught SIGTERM, shutting down
+[Sun Nov 26 15:50:22.145957 2023] [ssl:warn] [pid 22486] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 26 15:50:22.148725 2023] [ssl:warn] [pid 22486] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 26 15:50:22.273383 2023] [ssl:warn] [pid 22487] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 26 15:50:22.273428 2023] [ssl:warn] [pid 22487] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 26 15:50:22.273626 2023] [lbmethod_heartbeat:notice] [pid 22487] AH02282: No slotmem from mod_heartmonitor
+[Sun Nov 26 15:50:22.316735 2023] [mpm_prefork:notice] [pid 22487] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Sun Nov 26 15:50:22.317006 2023] [core:notice] [pid 22487] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Sun Nov 26 15:55:54.340367 2023] [mpm_prefork:notice] [pid 22487] AH00169: caught SIGTERM, shutting down
+[Sun Nov 26 16:04:45.585671 2023] [ssl:warn] [pid 23574] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 26 16:04:45.586011 2023] [ssl:warn] [pid 23574] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 26 16:04:45.706333 2023] [ssl:warn] [pid 23580] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 26 16:04:45.706378 2023] [ssl:warn] [pid 23580] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 26 16:04:45.706567 2023] [lbmethod_heartbeat:notice] [pid 23580] AH02282: No slotmem from mod_heartmonitor
+[Sun Nov 26 16:04:45.727948 2023] [mpm_prefork:notice] [pid 23580] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Sun Nov 26 16:04:45.728015 2023] [core:notice] [pid 23580] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Sun Nov 26 16:17:22.671582 2023] [mpm_prefork:notice] [pid 23580] AH00169: caught SIGTERM, shutting down
+[Sun Nov 26 16:19:31.651468 2023] [ssl:warn] [pid 25288] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 26 16:19:31.651799 2023] [ssl:warn] [pid 25288] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 26 16:19:31.773211 2023] [ssl:warn] [pid 25289] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 26 16:19:31.773264 2023] [ssl:warn] [pid 25289] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 26 16:19:31.773459 2023] [lbmethod_heartbeat:notice] [pid 25289] AH02282: No slotmem from mod_heartmonitor
+[Sun Nov 26 16:19:31.796435 2023] [mpm_prefork:notice] [pid 25289] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Sun Nov 26 16:19:31.796506 2023] [core:notice] [pid 25289] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Sun Nov 26 16:20:43.805916 2023] [mpm_prefork:notice] [pid 25289] AH00169: caught SIGTERM, shutting down
+[Sun Nov 26 21:17:33.134429 2023] [ssl:warn] [pid 27862] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 26 21:17:33.135638 2023] [ssl:warn] [pid 27862] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 26 21:17:33.265205 2023] [ssl:warn] [pid 27863] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Nov 26 21:17:33.265246 2023] [ssl:warn] [pid 27863] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Nov 26 21:17:33.265428 2023] [lbmethod_heartbeat:notice] [pid 27863] AH02282: No slotmem from mod_heartmonitor
+[Sun Nov 26 21:17:33.287541 2023] [mpm_prefork:notice] [pid 27863] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Sun Nov 26 21:17:33.287603 2023] [core:notice] [pid 27863] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Sun Nov 26 21:18:44.847833 2023] [mpm_prefork:notice] [pid 27863] AH00169: caught SIGTERM, shutting down
+[Mon Nov 27 12:58:39.204374 2023] [ssl:warn] [pid 31157] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Nov 27 12:58:39.206070 2023] [ssl:warn] [pid 31157] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Nov 27 12:58:39.337324 2023] [ssl:warn] [pid 31158] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Nov 27 12:58:39.337367 2023] [ssl:warn] [pid 31158] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Nov 27 12:58:39.337553 2023] [lbmethod_heartbeat:notice] [pid 31158] AH02282: No slotmem from mod_heartmonitor
+[Mon Nov 27 12:58:39.382312 2023] [mpm_prefork:notice] [pid 31158] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Mon Nov 27 12:58:39.382376 2023] [core:notice] [pid 31158] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Mon Nov 27 13:03:27.885049 2023] [mpm_prefork:notice] [pid 31158] AH00169: caught SIGTERM, shutting down
+[Mon Nov 27 19:40:09.789019 2023] [ssl:warn] [pid 2001] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Nov 27 19:40:09.789498 2023] [ssl:warn] [pid 2001] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Nov 27 19:40:09.921766 2023] [ssl:warn] [pid 2002] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Nov 27 19:40:09.921818 2023] [ssl:warn] [pid 2002] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Nov 27 19:40:09.922028 2023] [lbmethod_heartbeat:notice] [pid 2002] AH02282: No slotmem from mod_heartmonitor
+[Mon Nov 27 19:40:09.945790 2023] [mpm_prefork:notice] [pid 2002] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Mon Nov 27 19:40:09.945860 2023] [core:notice] [pid 2002] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Mon Nov 27 20:28:17.846579 2023] [mpm_prefork:notice] [pid 2002] AH00169: caught SIGTERM, shutting down
+[Mon Nov 27 20:48:50.750237 2023] [ssl:warn] [pid 6625] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Nov 27 20:48:50.750548 2023] [ssl:warn] [pid 6625] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Nov 27 20:48:50.874440 2023] [ssl:warn] [pid 6626] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Mon Nov 27 20:48:50.874483 2023] [ssl:warn] [pid 6626] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Nov 27 20:48:50.874674 2023] [lbmethod_heartbeat:notice] [pid 6626] AH02282: No slotmem from mod_heartmonitor
+[Mon Nov 27 20:48:50.896970 2023] [mpm_prefork:notice] [pid 6626] AH00163: Apache/2.4.56 (Unix) OpenSSL/1.1.1t PHP/8.2.4 mod_perl/2.0.12 Perl/v5.34.1 configured -- resuming normal operations
+[Mon Nov 27 20:48:50.897030 2023] [core:notice] [pid 6626] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'

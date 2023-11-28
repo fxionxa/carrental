@@ -1,0 +1,61 @@
+[15-Nov-2023 01:31:45 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'carrental' in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php:15
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php(15): mysqli_connect('carrental.c2zn5...', 'server', Object(SensitiveParameterValue), 'carrental')
+#1 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php on line 15
+[15-Nov-2023 01:32:46 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'carrental' in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php:15
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php(15): mysqli_connect('carrental.c2zn5...', 'server', Object(SensitiveParameterValue), 'carrental')
+#1 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php on line 15
+[21-Nov-2023 00:33:51 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'carrental' in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php:15
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php(15): mysqli_connect('carrental.c2zn5...', 'server', Object(SensitiveParameterValue), 'carrental')
+#1 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php on line 15
+[22-Nov-2023 00:18:52 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_logout.php on line 5
+[22-Nov-2023 00:19:13 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/findCar.php on line 15
+[22-Nov-2023 00:19:31 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/pages/findCar.php on line 15
+[22-Nov-2023 00:19:59 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/pages/carListing.php on line 15
+[22-Nov-2023 00:20:21 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/carListing.php on line 15
+[22-Nov-2023 00:20:23 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/addListing.php on line 15
+[22-Nov-2023 00:20:32 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/carListing.php on line 15
+[22-Nov-2023 00:20:39 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/manageUsers.php on line 15
+[22-Nov-2023 00:20:53 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Routes/process_addCar.php on line 14
+[22-Nov-2023 00:20:56 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Routes/process_carOwnerACSetting.php on line 14
+[26-Nov-2023 00:33:08 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/addListing.php on line 15
+[26-Nov-2023 00:34:40 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Operation timed out in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php:15
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php(15): mysqli_connect('carrental.c2zn5...', 'server', Object(SensitiveParameterValue), 'carrental')
+#1 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php on line 15
+[26-Nov-2023 00:35:40 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Operation timed out in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php:15
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php(15): mysqli_connect('carrental.c2zn5...', 'server', Object(SensitiveParameterValue), 'carrental')
+#1 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_register.php on line 15
+[27-Nov-2023 00:51:18 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/manageUsers.php on line 15
+[27-Nov-2023 00:51:39 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/addListing.php on line 15
+[27-Nov-2023 00:51:44 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/carListing.php on line 15
+[27-Nov-2023 00:52:09 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/findCar.php on line 15
+[27-Nov-2023 01:08:27 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/carListing.php on line 15
+[27-Nov-2023 01:08:42 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/carListing.php on line 15
+[27-Nov-2023 21:59:54 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/manageUsers.php on line 15
+[28-Nov-2023 04:44:47 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/addListing.php on line 15
+[28-Nov-2023 04:46:55 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_logout.php on line 5
+[28-Nov-2023 04:50:58 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_logout.php on line 5
+[28-Nov-2023 05:02:57 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_logout.php on line 5
+[28-Nov-2023 05:16:54 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_logout.php on line 5
+[28-Nov-2023 05:49:16 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/booking.php on line 15
+[28-Nov-2023 05:49:50 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/viewReviews.php on line 15
+[28-Nov-2023 05:49:52 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/Pages/viewReviews.php on line 15
+[28-Nov-2023 05:57:48 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_logout.php on line 5
+[28-Nov-2023 06:09:47 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_logout.php on line 5
+[28-Nov-2023 06:09:53 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_login.php on line 30
+[28-Nov-2023 06:10:00 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_login.php on line 30
+[28-Nov-2023 06:10:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_login.php on line 30
+[28-Nov-2023 06:10:51 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_logout.php on line 5
+[28-Nov-2023 06:11:30 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_logout.php on line 5
+[28-Nov-2023 06:13:47 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_logout.php on line 5
+[28-Nov-2023 06:14:49 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_makeAdmin.php on line 33
+[28-Nov-2023 06:14:57 Europe/Berlin] PHP Warning:  Undefined variable $uri in /Applications/XAMPP/xamppfiles/htdocs/carrental/routes/process_deleteUser.php on line 33
