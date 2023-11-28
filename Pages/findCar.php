@@ -29,6 +29,9 @@
     <header>
         <h1>Find a Car to Rent</h1>
     </header>
+    <div class="header">
+        <img src="flexwheelzlogo.png" alt="Flex Wheelz Logo" class="logo">
+    </div>
 
     <div class="container">
         <h2>Available Cars</h2>
