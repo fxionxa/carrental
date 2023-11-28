@@ -62,7 +62,6 @@
                                 <th>User ID</th>
                                 <th>Username</th>
                                 <th>Email</th>
-                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -70,9 +69,6 @@
                                 <td>$userID</td>
                                 <td>$username</td>
                                 <td>$email</td>
-                                <td>
-                                    <button class='button' onclick='editUser(1)'>Edit</button> <button class='button' onclick='deleteUser(1)'>Delete</button>
-                                </td>
                             </tr>
                         </tbody>                                    
                 ";
@@ -83,9 +79,9 @@
         <form method="POST" id="manageUsers">
             <br>
             <div>
-                <label for="renterID">Renter ID:</label>
-                <input type="text" id="renterID" name="renterID" required> 
-                <a href="../routes/process_makeAdmin.php"><button class="button">Make Admin</button></a> <a href="../routes/process_delete.php"><button class="button delete-button">Delete User</button></a>
+                <label for="userID">Renter ID:</label>
+                <input type="text" id="userID" name="userID" required> 
+                <button formaction="../routes/process_makeAdmin.php" type="submit" class="button">Make Admin</button> <button formaction="../routes/process_deleteUser.php" type="submit" class="button delete-button">Delete User</button>
             </div>
         </form>
     </div>
@@ -93,15 +89,6 @@
     <div class="container">
         <h2>Owners</h2>
         <?php
-            require "../../credentials.php";
-
-            $conn = mysqli_connect($host, $user, $pass, $name);
-
-            if (!$conn) { 
-                die("Connection failed: " . mysqli_connect_error());
-            }
-
-            $uid = $_SESSION["user_id"];
             $sql = "SELECT * FROM users WHERE user_type = 'owner'";
             $result = mysqli_query($conn,$sql);
 
@@ -119,7 +106,6 @@
                                 <th>User ID</th>
                                 <th>Username</th>
                                 <th>Email</th>
-                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -127,9 +113,6 @@
                                 <td>$userID</td>
                                 <td>$username</td>
                                 <td>$email</td>
-                                <td>
-                                    <button class='button' onclick='editUser(1)'>Edit</button> <button class='button' onclick='deleteUser(1)'>Delete</button>
-                                </td>
                             </tr>
                         </tbody>                                    
                 ";
@@ -137,6 +120,14 @@
                 echo "</table>";
             }
         ?>
+        <form method="POST" id="manageUsers">
+            <br>
+            <div>
+                <label for="userID">Owner ID:</label>
+                <input type="text" id="userID" name="userID" required> 
+                <button formaction="../routes/process_makeAdmin.php" type="submit" class="button">Make Admin</button> <button formaction="../routes/process_deleteUser.php" type="submit" class="button delete-button">Delete User</button>
+            </div>
+        </form>
         
         <!-- Back to Previous Page Button -->
     </div>
@@ -144,15 +135,6 @@
     <div class="container">
         <h2>Admins</h2>
         <?php
-            require "../../credentials.php";
-
-            $conn = mysqli_connect($host, $user, $pass, $name);
-
-            if (!$conn) { 
-                die("Connection failed: " . mysqli_connect_error());
-            }
-
-            $uid = $_SESSION["user_id"];
             $sql = "SELECT * FROM users WHERE user_type = 'admin'";
             $result = mysqli_query($conn,$sql);
 
@@ -170,7 +152,6 @@
                                 <th>User ID</th>
                                 <th>Username</th>
                                 <th>Email</th>
-                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -178,9 +159,6 @@
                                 <td>$userID</td>
                                 <td>$username</td>
                                 <td>$email</td>
-                                <td>
-                                    <button class='button' onclick='editUser(1)'>Edit</button> <button class='button' onclick='deleteUser(1)'>Delete</button>
-                                </td>
                             </tr>
                         </tbody>                                    
                 ";
@@ -188,10 +166,17 @@
                 echo "</table>";
             }
         ?>
-        
+        <form method="POST" id="manageUsers">
+            <br>
+            <div>
+                <label for="userID">Admin ID:</label>
+                <input type="text" id="userID" name="userID" required> 
+                <button formaction="../routes/process_deleteUser.php" type="submit" class="button delete-button">Delete User</button>
+            </div>
+        </form>
         <!-- Back to Previous Page Button -->
     </div>
-    
+
     <div class="container">
     <a href="admin.php"><button class="button">Back to Previous Page</button></a>
     </div>
