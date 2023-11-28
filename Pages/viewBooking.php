@@ -62,7 +62,7 @@
                     <div class='car-listing'>
                     <h3>Request ID: $requestID</h3>
                     <p>Listing ID: $listingID</p>
-                    <p>Staart Date: $startDate</p>
+                    <p>Start Date: $startDate</p>
                     <p>End Date: $endDate</p>
                     </div>
                 ";   
